@@ -11,7 +11,7 @@ print('Web Servo')
 
 print('<form action="" method="post">')
 print('<input type="number" name="number">')
-print('<input type="submit" name="led" value="move!">')
+print('<input type="submit" value="move!">')
 print('</form>')
 
 
