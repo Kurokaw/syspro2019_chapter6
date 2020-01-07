@@ -36,5 +36,5 @@ def setservo(x):
 form = cgi.FieldStorage()
 value = form.getvalue("number")
 print(value)
-setservo(value)
+setservo(int(value))
 
