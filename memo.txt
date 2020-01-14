@@ -1,0 +1,2 @@
+webサーバー起動：python3 -m http.server 8080 --cgi
+実行権限の取得：chmod 755 webservo.py
