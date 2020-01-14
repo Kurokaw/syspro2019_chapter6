@@ -37,6 +37,8 @@ form = cgi.FieldStorage()
 value = form.getvalue("number")
 print(value)
 print(float(value))
+
 setservo(float(value))
+time.sleep(1.0)
 
 GPIO.cleanup()
