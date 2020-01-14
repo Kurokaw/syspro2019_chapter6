@@ -4,7 +4,7 @@ import cgi
 import cgitb    #display CGI error on browser
 import time
 import RPi.GPIO as GPIO
-
+GPIO.setwarnings(False)
 
 print('Content-type: text/html; charset=UTF-8\r\n')
 print('Web Servo')
@@ -38,3 +38,5 @@ value = form.getvalue("number")
 print(value)
 print(float(value))
 setservo(float(value))
+
+GPIO.cleanup()
